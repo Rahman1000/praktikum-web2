@@ -100,8 +100,6 @@
             }else if($produk == "Rice Cooker"){
                 $total_harga = $jumlah * 500000;
             }
-        }
-
     ?>
     
     <div class="container">
@@ -120,14 +118,13 @@
             </tr>
         </table>
     </div>
-    
+
+    <?php } ?>
 
     <footer class="main-footer text-center bg-gray-light">
         <hr>
         &copy; Aulia Rahman
     </footer>
-
-    
 
 </body>
 </html>
