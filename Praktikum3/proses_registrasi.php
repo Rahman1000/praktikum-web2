@@ -7,7 +7,7 @@ $prodi = [
 
 $domisili = ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"];
 
-$skill = [
+$skills = [
     "HTML"=>10,
     "CSS"=>10,
     "JavaScript"=>20,
