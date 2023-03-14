@@ -20,7 +20,21 @@
                 <th>total nilai</th>
                 <th>keterangan</th>
             </tr>
-            <?php require_once 'proses_nilai.php';?>
+            <?php 
+            if (isset($_POST['submit'])) {
+                $nama = $_GET['name'];
+                $matkul = $_GET['matkul'];
+                $UTS = $_GET['UTS'];
+                $UAS = $_GET['UAS'];
+                $TUGAS = $_GET['TUGAS'];
+                $total_nilai = ($UTS + $UAS + $TUGAS)/3;
+
+                if($total_nilai > 75){
+                    $keterangan = "Lulus";
+                }else{
+                    $keterangan = "Tidak Lulus";
+                }
+            ?>
             <tr>
                 <td><?= $nama;?></td>
                 <td><?= $matkul;?></td>
@@ -30,7 +44,7 @@
                 <td><?= $total_nilai;?></td>
                 <td><?= $keterangan;?></td>
             </tr>
-
+            <?php }?>
 
         </table>
     </div>
